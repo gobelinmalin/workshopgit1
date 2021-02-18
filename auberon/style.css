@@ -1,0 +1,199 @@
+h1{
+    font-size: 60px;
+    color: coral;
+}
+h1:hover{  
+    width: 30%;
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    color: blue;
+}
+.fix{
+    position: fixed;
+    top:0px; 
+    left:0px;
+}
+.fix2{
+    position: fixed;
+    top:0px;
+    right: 0px;
+}
+.mouv{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); top:0px; left: 0px;
+    animation-name: anim-div;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   /* animation-name: chgt-couleur;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    */
+}
+.mouv1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); top:0px; right: 0px;
+    animation-name: anim-div;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+section{
+    height: 3000px;
+}
+/*@keyframes chgt-couleur{
+    from{background-color: #06D;}
+    to{background-color: orange;}
+}
+*/
+/*
+@keyframes anim-div{
+    0%{background-color: greenyellow; top:0px; left:0px;}
+    25%{background-color: yellow; top:0px; left:200px;}
+    50%{background-color: orange; top:200px; left: 200px;}
+    75%{background-color: violet; top:200px; left: 0px;}
+    100%{background-color: greenyellow; top:0px; left: 0px;}
+}*/
+@keyframes anim-div{
+    0%{background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); top:0px; left: 0px;}
+    25%{background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));top:0px; left: 200px;}
+    50%{background: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1));top:200px; left: 200px;}
+    75%{background: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1));top:200px; left: 0px;}
+    100%{background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));top:0px; left: 0px;}
+}
+.mouv2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    animation-name: anim-div2;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div2{
+    0%{background-color: greenyellow; top:0px; left:0px;}
+    25%{background-color: yellow; top:0px; left:225px;}
+    50%{background-color: orange; top:225px; left: 225px;}
+    75%{background-color: violet; top:225px; left: 0px;}
+    100%{background-color: greenyellow; top:0px; left: 0px;}
+}
+.mouv3{
+    position: relative;
+    top:0px;
+    left:20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    animation-name: anim-div3;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div3{
+    0%{background-color: greenyellow; top:0px; left:20px;}
+    25%{background-color: yellow; top:0px; left:200px;}
+    50%{background-color: orange; top:180px; left: 200px;}
+    75%{background-color: violet; top:180px; left: 20px;}
+    100%{background-color: greenyellow; top:0px; left: 20px;}
+}
+.mouv4{
+    position: relative;
+    top:5px;
+    left:40px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color:greenyellow ;
+    animation-name: anim-div4;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div4{
+    0%{background-color: greenyellow; top:5px; left:40px;}
+    25%{background-color: yellow; top:0px; left:170px;}
+    50%{background-color: orange; top:100px; left: 170px;}
+    75%{background-color: violet; top:100px; left: 40px;}
+    100%{background-color: greenyellow; top:5px; left: 40px;}
+}
+.mouv5{
+    position: relative;
+    top:10px;
+    left:80px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    animation-name: anim-div5;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div5{
+    0%{background-color: greenyellow; top:10px; left:80px;}
+    25%{background-color: yellow; top:0px; left:140px;}
+    50%{background-color: orange; top:60px; left: 140px;}
+    75%{background-color: violet; top:60px; left: 80px;}
+    100%{background-color: greenyellow; top:10px; left: 80px;}
+}
+.mouv6{
+    position: relative;
+    top: -80px;
+    left: 50px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    animation-name: anim-div6;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div6{
+    0%{background-color: greenyellow; top:-80px; left:50px;}
+    25%{background-color: yellow; top:-80px; left:200px;}
+    50%{background-color: orange; top:100px; left: 200px;}
+    75%{background-color: violet; top:100px; left: 50px;}
+    100%{background-color: greenyellow; top:-80px; left: 50px;}
+}
+.mouv7{
+    position: relative;
+    top:-80px;
+    left:20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    animation-name: anim-div7;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim-div7{
+    0%{background-color: greenyellow; top:-80px; left:20px;}
+    25%{background-color: yellow; top:-80px; left:180px;}
+    50%{background-color: orange; top:60px; left: 180px;}
+    75%{background-color: violet; top:60px; left: 20px;}
+    100%{background-color: greenyellow; top:-80px; left: 20px;}
+}
